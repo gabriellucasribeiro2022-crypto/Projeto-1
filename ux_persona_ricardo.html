@@ -1,0 +1,280 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: var(--font-sans); }
+.wrap { padding: 1.5rem 0; }
+.profile-header { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.5rem; margin-bottom: 16px; display: flex; align-items: center; gap: 20px; }
+.avatar-circle { width: 72px; height: 72px; border-radius: 50%; background: #EEEDFE; display: flex; align-items: center; justify-content: center; font-size: 26px; font-weight: 500; color: #3C3489; flex-shrink: 0; }
+.profile-name { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+.profile-role { font-size: 14px; color: var(--color-text-secondary); margin-top: 3px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.badge { font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: var(--border-radius-md); }
+.badge-purple { background: #EEEDFE; color: #3C3489; }
+.badge-gray { background: #F1EFE8; color: #444441; }
+.badge-teal { background: #E1F5EE; color: #085041; }
+.badge-coral { background: #FAECE7; color: #712B13; }
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 16px; }
+.card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1.25rem; }
+.card-title { font-size: 11px; font-weight: 500; color: var(--color-text-tertiary); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 12px; }
+.item-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.item-row:last-child { border-bottom: none; }
+.item-label { font-size: 13px; color: var(--color-text-secondary); }
+.item-value { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.quote-block { border-left: 3px solid #AFA9EC; padding: 10px 14px; background: #EEEDFE; border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0; margin-bottom: 16px; }
+.quote-text { font-size: 14px; color: #3C3489; font-style: italic; line-height: 1.6; }
+.goal-item { display: flex; gap: 10px; align-items: flex-start; padding: 8px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.goal-item:last-child { border-bottom: none; }
+.goal-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
+.goal-dot-green { background: #639922; }
+.goal-dot-red { background: #E24B4A; }
+.goal-dot-purple { background: #7F77DD; }
+.goal-text { font-size: 13px; color: var(--color-text-primary); line-height: 1.5; }
+.goal-sub { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+.bar-row { margin-bottom: 10px; }
+.bar-label { display: flex; justify-content: space-between; font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px; }
+.bar-track { height: 6px; background: var(--color-background-secondary); border-radius: 99px; overflow: hidden; }
+.bar-fill { height: 100%; border-radius: 99px; }
+.metric-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 1rem; text-align: center; }
+.metric-val { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+.metric-label { font-size: 12px; color: var(--color-text-secondary); margin-top: 4px; }
+.journey-step { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 0.5px solid var(--color-border-tertiary); }
+.journey-step:last-child { border-bottom: none; }
+.step-num { width: 24px; height: 24px; border-radius: 50%; background: #EEEDFE; color: #3C3489; font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.step-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); }
+.step-desc { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; line-height: 1.4; }
+.emotion-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 6px; }
+.emotion-chip { font-size: 11px; padding: 3px 9px; border-radius: 99px; }
+.chip-pos { background: #EAF3DE; color: #27500A; }
+.chip-neg { background: #FCEBEB; color: #791F1F; }
+.chip-neu { background: #F1EFE8; color: #444441; }
+</style>
+
+<div class="wrap">
+
+  <div class="profile-header">
+    <div class="avatar-circle">RC</div>
+    <div style="flex:1;">
+      <div class="profile-name">Ricardo Camargo</div>
+      <div class="profile-role">Analista de sistemas — São Paulo, SP &nbsp;·&nbsp; 38 anos</div>
+      <div class="badges">
+        <span class="badge badge-purple">Millennials</span>
+        <span class="badge badge-purple">Geração X tardia</span>
+        <span class="badge badge-gray">Single-player</span>
+        <span class="badge badge-teal">PC / Steam</span>
+        <span class="badge badge-gray">Console</span>
+        <span class="badge badge-coral">Hardcore gamer</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="quote-block">
+    <div class="quote-text">"Se o jogo não me desafiar de verdade, não vale o meu tempo. Eu quero sentir que conquistei algo quando chegar no fim."</div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Dados demográficos</div>
+      <div class="item-row"><span class="item-label">Idade</span><span class="item-value">38 anos</span></div>
+      <div class="item-row"><span class="item-label">Localização</span><span class="item-value">São Paulo, SP</span></div>
+      <div class="item-row"><span class="item-label">Profissão</span><span class="item-value">Analista de sistemas</span></div>
+      <div class="item-row"><span class="item-label">Renda</span><span class="item-value">Classe B / C+</span></div>
+      <div class="item-row"><span class="item-label">Escolaridade</span><span class="item-value">Superior completo</span></div>
+      <div class="item-row"><span class="item-label">Estado civil</span><span class="item-value">Casado, 1 filho</span></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Comportamento de jogo</div>
+      <div class="item-row"><span class="item-label">Horas/semana</span><span class="item-value">8–14h</span></div>
+      <div class="item-row"><span class="item-label">Horário preferido</span><span class="item-value">Noite (após 22h)</span></div>
+      <div class="item-row"><span class="item-label">Plataforma principal</span><span class="item-value">PC (Steam)</span></div>
+      <div class="item-row"><span class="item-label">Modo preferido</span><span class="item-value">Single-player</span></div>
+      <div class="item-row"><span class="item-label">Gasto médio/mês</span><span class="item-value">R$ 60–120</span></div>
+      <div class="item-row"><span class="item-label">Compra em</span><span class="item-value">Promoções Steam</span></div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <div class="metric-card">
+      <div class="metric-val">87%</div>
+      <div class="metric-label">probabilidade de compra se desafiador</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">25–54</div>
+      <div class="metric-label">faixa etária do segmento nostálgico</div>
+    </div>
+    <div class="metric-card">
+      <div class="metric-val">+10h</div>
+      <div class="metric-label">tempo médio em jogos retrô difíceis</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Objetivos e motivações</div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-green"></div>
+        <div>
+          <div class="goal-text">Sentir nostalgia dos consoles 8/16-bit</div>
+          <div class="goal-sub">SNES, Mega Drive, Atari — memória afetiva forte</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-green"></div>
+        <div>
+          <div class="goal-text">Superar desafios difíceis como prova de habilidade</div>
+          <div class="goal-sub">Distintivo de ser um "verdadeiro gamer"</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-green"></div>
+        <div>
+          <div class="goal-text">Escapar do estresse do trabalho</div>
+          <div class="goal-sub">Joga à noite para descomprimir</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-purple"></div>
+        <div>
+          <div class="goal-text">Completar 100% dos achievements</div>
+          <div class="goal-sub">Alto engajamento com métricas de progresso</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Frustrações e barreiras</div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-red"></div>
+        <div>
+          <div class="goal-text">Jogos com dificuldade fácil demais</div>
+          <div class="goal-sub">Sente que "não há conquista real"</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-red"></div>
+        <div>
+          <div class="goal-text">Falta de tempo contínuo para jogar</div>
+          <div class="goal-sub">Filho pequeno limita sessões longas</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-red"></div>
+        <div>
+          <div class="goal-text">Jogos AAA sem alma ou identidade visual</div>
+          <div class="goal-sub">Prefere indie com proposta clara</div>
+        </div>
+      </div>
+      <div class="goal-item">
+        <div class="goal-dot goal-dot-red"></div>
+        <div>
+          <div class="goal-text">Preço alto sem promoção</div>
+          <div class="goal-sub">Aguarda sales na Steam para comprar</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-title">Afinidade com características do jogo</div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Dificuldade elevada</span><span>95%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:95%; background:#7F77DD;"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Estética pixel art retrô</span><span>90%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:90%; background:#7F77DD;"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Sistema de achievements</span><span>85%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:85%; background:#7F77DD;"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Narrativa / lore</span><span>70%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:70%; background:#AFA9EC;"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Multiplayer / co-op</span><span>20%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:20%; background:#D3D1C7;"></div></div>
+      </div>
+      <div class="bar-row">
+        <div class="bar-label"><span>Mobile / portabilidade</span><span>10%</span></div>
+        <div class="bar-track"><div class="bar-fill" style="width:10%; background:#D3D1C7;"></div></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Jornada de descoberta do jogo</div>
+      <div class="journey-step">
+        <div class="step-num">1</div>
+        <div>
+          <div class="step-title">Descoberta</div>
+          <div class="step-desc">Via Steam, YouTube (reviews indie) ou Reddit r/gaming</div>
+          <div class="emotion-row"><span class="emotion-chip chip-neu">curioso</span><span class="emotion-chip chip-neu">cético</span></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="step-num">2</div>
+        <div>
+          <div class="step-title">Avaliação</div>
+          <div class="step-desc">Assiste gameplay no YouTube, lê reviews no Steam</div>
+          <div class="emotion-row"><span class="emotion-chip chip-pos">animado</span><span class="emotion-chip chip-neu">avaliando</span></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="step-num">3</div>
+        <div>
+          <div class="step-title">Compra</div>
+          <div class="step-desc">Aguarda promoção ou compra se o preço for até R$ 40</div>
+          <div class="emotion-row"><span class="emotion-chip chip-pos">satisfeito</span><span class="emotion-chip chip-neg">impaciente com preço alto</span></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="step-num">4</div>
+        <div>
+          <div class="step-title">Engajamento</div>
+          <div class="step-desc">Joga intensamente à noite, busca 100% de conclusão</div>
+          <div class="emotion-row"><span class="emotion-chip chip-pos">imerso</span><span class="emotion-chip chip-pos">desafiado</span></div>
+        </div>
+      </div>
+      <div class="journey-step">
+        <div class="step-num">5</div>
+        <div>
+          <div class="step-title">Recomendação</div>
+          <div class="step-desc">Deixa review no Steam e comenta em grupos de gamers</div>
+          <div class="emotion-row"><span class="emotion-chip chip-pos">orgulhoso</span><span class="emotion-chip chip-pos">evangelizador</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom: 16px;">
+    <div class="card-title">Referências de jogos que ele ama</div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;">
+      <span class="badge badge-gray">Hollow Knight</span>
+      <span class="badge badge-gray">Celeste</span>
+      <span class="badge badge-gray">Dead Cells</span>
+      <span class="badge badge-gray">Castlevania SOTN</span>
+      <span class="badge badge-gray">Mega Man X</span>
+      <span class="badge badge-gray">Super Metroid</span>
+      <span class="badge badge-gray">Shovel Knight</span>
+      <span class="badge badge-gray">Blasphemous</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">O que este jogo precisa oferecer para conquistar Ricardo</div>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;">
+      <span class="badge badge-purple">Dificuldade genuína</span>
+      <span class="badge badge-purple">Sistema de checkpoint justo</span>
+      <span class="badge badge-purple">Pixel art com identidade própria</span>
+      <span class="badge badge-teal">Achievements no Steam</span>
+      <span class="badge badge-teal">Preço até R$ 40</span>
+      <span class="badge badge-teal">Save state confiável</span>
+      <span class="badge badge-coral">Sem microtransações</span>
+      <span class="badge badge-coral">Sem conteúdo pago obrigatório</span>
+    </div>
+  </div>
+
+</div>
