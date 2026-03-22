@@ -1,0 +1,99 @@
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+.card{background:var(--color-background-primary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-lg);padding:1.25rem}
+.label{font-size:11px;font-weight:500;color:var(--color-text-tertiary);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:6px}
+.tag{display:inline-block;font-size:11px;font-weight:500;padding:3px 10px;border-radius:20px;margin:3px 3px 3px 0}
+.tag-p{background:#EEEDFE;color:#3C3489}
+.tag-t{background:#E1F5EE;color:#085041}
+.tag-a{background:#FAEEDA;color:#633806}
+.tag-c{background:#FAECE7;color:#712B13}
+.bar-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.bar-label{font-size:12px;color:var(--color-text-secondary);width:140px;flex-shrink:0}
+.bar-bg{flex:1;height:6px;background:var(--color-border-tertiary);border-radius:3px;overflow:hidden}
+.bar-fill{height:100%;border-radius:3px;background:#534AB7}
+.bar-val{font-size:12px;font-weight:500;color:var(--color-text-primary);width:32px;text-align:right}
+.quote{border-left:2px solid #AFA9EC;padding-left:12px;font-size:13px;color:var(--color-text-secondary);line-height:1.6;font-style:italic;border-radius:0}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(0,1fr));gap:12px}
+.section{margin-bottom:1.25rem}
+</style>
+
+<div style="padding:1rem 0;display:flex;flex-direction:column;gap:14px">
+
+<div style="display:flex;align-items:center;gap:16px">
+  <div style="width:56px;height:56px;border-radius:50%;background:#EEEDFE;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:500;color:#534AB7;flex-shrink:0">GR</div>
+  <div>
+    <p style="font-size:18px;font-weight:500;color:var(--color-text-primary)">Gabriel Rocha</p>
+    <p style="font-size:13px;color:var(--color-text-secondary)">22 anos — estudante de engenharia, São Paulo / BR</p>
+    <p style="font-size:12px;color:var(--color-text-tertiary);margin-top:2px">Jogador hardcore — PC (Steam) — solo e co-op online</p>
+  </div>
+</div>
+
+<div class="grid2">
+  <div class="card">
+    <div class="label">Contexto</div>
+    <div style="font-size:13px;color:var(--color-text-secondary);line-height:1.6">Mora com família, tem entre 2–4h por noite para jogar. Consome conteúdo de jogos no YouTube e Twitch. Prefere PC pela precisão do controle e acesso a mods. Acompanha lançamentos indie via Steam e redes sociais.</div>
+  </div>
+  <div class="card">
+    <div class="label">Frase-chave</div>
+    <div class="quote">"Se eu não consegui passar dessa sala, é porque eu ainda não aprendi o padrão certo. Vou tentar de novo até entender."</div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="label" style="margin-bottom:10px">Motivações principais</div>
+  <div class="bar-row"><span class="bar-label">Dominar mecânicas</span><div class="bar-bg"><div class="bar-fill" style="width:95%"></div></div><span class="bar-val">95%</span></div>
+  <div class="bar-row"><span class="bar-label">Progressão profunda</span><div class="bar-bg"><div class="bar-fill" style="width:88%"></div></div><span class="bar-val">88%</span></div>
+  <div class="bar-row"><span class="bar-label">Alta dificuldade</span><div class="bar-bg"><div class="bar-fill" style="width:82%"></div></div><span class="bar-val">82%</span></div>
+  <div class="bar-row"><span class="bar-label">Rejogabilidade</span><div class="bar-bg"><div class="bar-fill" style="width:78%"></div></div><span class="bar-val">78%</span></div>
+  <div class="bar-row"><span class="bar-label">Competição / ranking</span><div class="bar-bg"><div class="bar-fill" style="width:55%"></div></div><span class="bar-val">55%</span></div>
+</div>
+
+<div class="grid2">
+  <div class="card">
+    <div class="label">O que ele quer no jogo</div>
+    <div style="margin-top:6px">
+      <span class="tag tag-p">builds variadas</span>
+      <span class="tag tag-p">curva de aprendizado real</span>
+      <span class="tag tag-p">pixel art com identidade</span>
+      <span class="tag tag-p">chefes com padrões</span>
+      <span class="tag tag-p">meta-progressão</span>
+      <span class="tag tag-p">runs rápidas (&lt;30min)</span>
+    </div>
+  </div>
+  <div class="card">
+    <div class="label">O que o faz abandonar o jogo</div>
+    <div style="margin-top:6px">
+      <span class="tag tag-c">RNG punitivo demais</span>
+      <span class="tag tag-c">falta de feedback visual</span>
+      <span class="tag tag-c">builds sem sinergia</span>
+      <span class="tag tag-c">progressão travada por paywall</span>
+      <span class="tag tag-c">arte genérica</span>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="label">Referências que ele joga</div>
+  <div style="margin-top:6px">
+    <span class="tag tag-t">Hades</span>
+    <span class="tag tag-t">Dead Cells</span>
+    <span class="tag tag-t">Spelunky 2</span>
+    <span class="tag tag-t">Vampire Survivors</span>
+    <span class="tag tag-t">Risk of Rain 2</span>
+    <span class="tag tag-t">Enter the Gungeon</span>
+  </div>
+</div>
+
+<div class="card">
+  <div class="label">Contexto Brasil / LATAM</div>
+  <div style="font-size:13px;color:var(--color-text-secondary);line-height:1.6">Sensível a preço — prefere jogos na faixa de R$20–50. Compra em promoções Steam. Consome conteúdo em PT-BR. Valoriza suporte ao idioma e comunidade ativa no Discord. Influenciado por streamers brasileiros como forma de descoberta de novos jogos.</div>
+</div>
+
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:4px">
+  <button style="font-size:12px;padding:6px 14px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);cursor:pointer" onclick="sendPrompt('Crie uma segunda persona para o jogador casual mobile baseada nos dados do projeto de roguelite.')">Criar persona casual ↗</button>
+  <button style="font-size:12px;padding:6px 14px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);cursor:pointer" onclick="sendPrompt('Com base na persona do Gabriel, quais mecânicas de roguelite devo priorizar no design do jogo?')">Recomendar mecânicas ↗</button>
+  <button style="font-size:12px;padding:6px 14px;border:0.5px solid var(--color-border-secondary);border-radius:var(--border-radius-md);background:transparent;color:var(--color-text-primary);cursor:pointer" onclick="sendPrompt('Quais estratégias de marketing funcionam melhor para atingir o Gabriel no mercado brasileiro?')">Estratégia de marketing ↗</button>
+</div>
+
+</div>
