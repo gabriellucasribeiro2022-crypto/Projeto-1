@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ESTILO DO MENU */
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D3D3D3;
+    font-weight: bold;
+    transition: 0.7s;
+}
+
+nav a:hover {
+    color: #BEBEBE;
+}
+
+header {
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-bottom: 2px solid #ff4500;
+}
+
+/*body*/
+
+body {
+    background-color: #d69a9a;
+    color: white;
+}
