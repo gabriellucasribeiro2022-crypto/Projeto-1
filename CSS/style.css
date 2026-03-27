@@ -34,7 +34,7 @@ header {
 /*body*/
 
 body {
-    background-color: #d69a9a;
+    background-color: #050505;
     color: white;
 }
 
@@ -48,7 +48,7 @@ body {
     justify-content: center;
     text-align: center;
     padding: 20px;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/bacon.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../img/Background.png);
     background-size: cover;
     background-position: center;
 }
@@ -79,4 +79,28 @@ body {
     margin-bottom: 30px;
     line-height: 1.6;
     max-width: 600px;
+}
+
+/* Rodapé */
+
+footer {
+    background-color: rgba(0,0,0,0.9);
+    color: #d3d3d3;
+    padding: 40px 20px;
+    border-top: 2px solid #ff0000;;
+    text-align: center;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.redes-sociais {
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
 }
