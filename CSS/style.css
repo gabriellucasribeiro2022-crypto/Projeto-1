@@ -22,6 +22,13 @@ body::-webkit-scrollbar-thumb {
 
 /* ESTILO DO MENU */
 
+.pagina-ativa {
+    color: #ff4500;
+    border-bottom: solid #ff4500;
+    padding-bottom: 5px;
+    border-radius: 5px;
+}
+
 nav ul {
     display: flex;
     list-style: none;
