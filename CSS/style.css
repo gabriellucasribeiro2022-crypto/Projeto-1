@@ -205,9 +205,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 60vh;
-    padding: 50px;
+    flex-wrap: wrap;
+    gap: 40px;
+    min-height: 80vh;
+    padding: 80px 20px;
     perspective: 1000px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.85)), url('../img/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .carta-personagem {
