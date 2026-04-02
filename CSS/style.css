@@ -5,6 +5,29 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Fonte */
+
+
+h1, .btn-jogar, nav a {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase; 
+}
+
+
+body, p, h2, label, input, textarea {
+    font-family: 'MedievalSharp', cursive;
+}
+
+
+h1 {
+    font-size: 2.5rem; 
+    line-height: 1.5;
+}
+
+nav a {
+    font-size: 0.8rem; 
+}
+
 /* Barra do scroll */
 
 body::-webkit-scrollbar {
@@ -85,7 +108,7 @@ body {
     padding: 15px 40px;
     font-size: 1.2rem;
     font-weight:  bold;
-    border-radius: 10px;
+    border-radius:  10px;
     box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
 }
 
@@ -266,3 +289,71 @@ footer {
     transition: 0.3s;
 }
     
+/* Fale conosco */
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 85vh;
+    padding: 50px 20px;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../img/Background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container-formulario {
+    background-color: rgba(20, 20, 20, 0.9);
+    border: 2px solid #ff4500;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.2);
+    text-align: center;
+}
+
+.container-formulario h1 {
+    color: #ff4500;
+    margin-bottom: 10px;
+}
+
+.container-formulario p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.campos {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campos label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ff8c42;
+    font-weight: bold;
+}
+
+.campos input, .campos textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #050505;
+    border: 1px solid #444;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.campos input:focus, .campos textarea:focus {
+    border-color: #ff4500;
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.5);
+}
+
+.container-formulario .btn-jogar {
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
