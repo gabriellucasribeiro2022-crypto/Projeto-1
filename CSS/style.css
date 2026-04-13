@@ -357,3 +357,82 @@ footer {
     cursor: pointer;
     border: none;
 }
+
+/* Efeito de blur caso seja menor de idade */
+
+.carta-blur {
+    filter: blur(10px);
+    pointer-events: none; 
+    user-select: none;
+}
+
+/* Mudar Tema */
+
+body.light-mode {
+    background-color: #d1d1d1 !important; 
+    background-image: url('../img/Background.png') !important; 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    color: #1a1a1a !important;
+}
+
+body.light-mode main, 
+body.light-mode section,
+body.light-mode header {
+    background-color: transparent !important; 
+    background-image: none !important; 
+    border-color: #ccc !important;
+}
+
+body.light-mode p, 
+body.light-mode h1, 
+body.light-mode h2,
+body.light-mode li a,
+body.light-mode .btn-tema-icon {
+    color: #1a1a1a !important;
+    border-color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-tema-icon:hover {
+    background: rgba(255, 69, 0, 0.4) !important;
+    border-color: #ff4500 !important;
+    transform: scale(1.1); 
+}
+
+body.light-mode .btn-tema-icon:hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-color: #333 !important;
+    color: #ff4500 !important;
+}
+
+/* parte pra celular */
+
+@media (max-width: 768px) {
+    body, body.light-mode {
+        background-size: cover;
+        background-position: center;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 2.5rem !important;
+        text-align: center;
+    }
+
+    main, section {
+        width: 95% !important;
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .botao-principal, .btn-tema-icon {
+        padding: 12px 20px;
+        font-size: 1.1rem;
+    }
+}
