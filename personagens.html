@@ -36,12 +36,15 @@
         <div class="estrutura-carta">
             <div class="carta-personagem carta-blur" onclick="virarCarta(this)">
                 <div class="conteudo-carta">
-                    <div class="frente-carta">
+                     <div class="frente-carta">
                         <img src="Animações Sprite/Animação walking(left) 25Frames/frame_000.png">
                     </div>
                     <div class="verso-carta">
-                        <h2>Personagem 1</h2>
-                        <p>informações</p>
+                        <h2 id="char-nome"></h2>
+                        <p><strong>Idade:</strong> <span id="char-idade"></span></p>
+                        <p><strong>Facção:</strong> <span id="char-faccao"></span></p>
+                        <p><strong>Importância:</strong> <span id="char-importancia"></span></p>
+                        <p id="char-historia" class="texto-historia-carta"></p>
                     </div> 
                 </div>   
             </div>
